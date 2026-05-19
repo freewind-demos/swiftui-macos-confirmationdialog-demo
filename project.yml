@@ -11,6 +11,7 @@ targets:
   SwiftUIConfirmationDialogDemo:
     type: application
     platform: macOS
+    productName: SwiftUIConfirmationDialogDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUIConfirmationDialogDemo:
+    build:
+      targets:
+        SwiftUIConfirmationDialogDemo: all
+    run:
+      config: Debug
